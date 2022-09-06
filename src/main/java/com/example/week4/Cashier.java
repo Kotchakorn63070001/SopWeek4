@@ -13,8 +13,8 @@ public class Cashier {
     public Cashier() {
 //        c = new ArrayList<>(1);
     }
-    @RequestMapping(value = "/getChange/{money}", method = RequestMethod.GET)
-    public Change getChange(@PathVariable("money") int money){
+    @RequestMapping(value = "/getChange/{coin}", method = RequestMethod.GET)
+    public Change getChange(@PathVariable("coin") int money){
         ArrayList<Integer> value = new ArrayList();
         value.add(1000);
         value.add(500);
